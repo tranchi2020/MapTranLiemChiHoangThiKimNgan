@@ -5,8 +5,7 @@ const MessageCardForm = (props) => {
   return (
     <Card body className="message-form">
       <CardTitle>Welcome to GuestM.app!</CardTitle>
-      <CardText>Leave a message with your location!</CardText>
-      {
+      <CardText>Leave a message with your location!</CardText> {
         !props.sendingMessage && !props.sentMessage && props.haveUsersLocation ?
           <Form onSubmit={props.formSubmitted}>
             <FormGroup>
